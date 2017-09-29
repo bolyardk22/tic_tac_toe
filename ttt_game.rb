@@ -100,7 +100,7 @@ def game
 	player = set_character
 	until win_state(board) == true || test_for_full_board(board) == true
 		draw_board(board)
-		puts "Player #{player.capitalize} Which space would you like?"
+		puts "Player #{player.capitalize}, which space would you like?"
 		position = gets.chomp.to_i
 			if spot_open(board, position) == true
 					update = update_move(board, player, position)
